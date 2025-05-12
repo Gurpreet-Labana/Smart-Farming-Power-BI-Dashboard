@@ -63,13 +63,6 @@ Each visual is tied to business-relevant logic that helps identify patterns and 
 
 ---
 
-## 📁 Project Files
-
-- `glg.pbix`: Power BI Dashboard file
-- `Smart_Farming_Crop_Yield_2024.csv`: Source dataset used for all visuals
-
----
-
 ## 📌 How It Helps Greenhouse Farming
 
 This dashboard supports:
