@@ -1,63 +1,89 @@
-# 🌱 Smart Farming Power BI Dashboard - Great Lakes Greenhouse
+# 🌱 Smart Farming Power BI Dashboard
 
-This Power BI project provides a dynamic, data-driven dashboard designed to help **Great Lakes Greenhouse** monitor and optimize crop yield, health, and farm operations using smart sensor data.
+This repository contains a Power BI dashboard project built to showcase smart farming insights using sensor-based agricultural data. It is designed as a case study for Great Lakes Greenhouse and demonstrates how data-driven dashboards can help optimize crop yield, monitor plant health, and improve farm operations.
+
+---
+## 📈 Dashboard Views
+
+### 🔍 Overview
+
+![Dashboard Overview](https://github.com/Gurpreet-Labana/Smart-Farming-Power-BI-Dashboard/blob/main/Screenshot%202025-05-12%20111855.png)
+
+## 📊 Dashboard Purpose
+
+The goal of this dashboard is to provide actionable insights to greenhouse operators and farm managers by visualizing critical metrics such as:
+- Crop yield
+- Environmental conditions
+- Irrigation efficiency
+- Crop health (disease status)
+- Geospatial distribution of farm performance
+
+This dashboard was created using the [Smart Farming Crop Yield 2024 dataset](https://www.kaggle.com/datasets/atharvasoundankar/smart-farming-sensor-data-for-yield-prediction).
 
 ---
 
-## 📌 Project Overview
+## 🧠 Dashboard Logic & Structure
 
-This dashboard visualizes agricultural and environmental data from greenhouse farms to support data-driven decision-making. It enables greenhouse managers to:
+The dashboard is composed of interactive visuals linked via slicers that filter data dynamically by:
 
-- Monitor average crop yields and vegetation health
-- Analyze the impact of irrigation methods and environmental factors
-- Detect and localize crop disease outbreaks
-- Track key performance indicators like crop cycle duration and NDVI
+- **Region**
+- **Crop Type**
+- **Irrigation Method**
+- **Crop Disease Status**
 
----
+Each visual is tied to business-relevant logic that helps identify patterns and optimize farming operations:
 
-## 📊 Key Features
+### ✅ KPI Cards:
+| KPI Metric | Description |
+|------------|-------------|
+| **Average Yield (kg/ha)** | Indicates overall farm productivity |
+| **Average NDVI Index** | Reflects plant health and growth potential |
+| **Average Temperature** | Helps correlate climate with yield outcomes |
+| **Average Crop Cycle Duration** | Monitors how long crops take to mature |
+| **% of Farms with Severe Disease** | Alerts on critical crop health issues |
 
-- **Interactive Filters:** Region, Crop Type, Irrigation Method, Crop Disease Status
-- **KPI Cards:**  
-  - Average Yield (kg/hectare)  
-  - NDVI Index  
-  - Avg Temperature  
-  - Crop Cycle Duration  
-  - % of Farms with Severe Disease
-- **Visuals Include:**
-  - Yield by Region (Clustered Bar with conditional color)
-  - NDVI vs Yield Scatter Plot
-  - Impact of Irrigation on Yield (Clustered Column)
-  - Crop Disease Distribution (Donut Chart)
-  - Geo Map of Farms with Yield & Disease Info
-  - Farm Performance Table with conditional formatting
+### 📈 Visual Insights:
+- **Yield by Region (Bar Chart)**  
+  Compares average yields across regions, color-coded by performance levels.
 
----
+- **Impact of Irrigation Type (Clustered Column Chart)**  
+  Shows how irrigation methods like Drip, Sprinkler, and Manual influence yield.
 
-## 🗂️ Files Included
+- **NDVI vs Yield (Scatter Plot)**  
+  Highlights the relationship between plant health (NDVI) and actual yield output.
 
-- `glg.pbix` – The Power BI dashboard file
-- `Smart_Farming_Crop_Yield_2024.csv` – The dataset used in the dashboard
+- **Crop Disease Status Distribution (Donut Chart)**  
+  Gives an overview of disease prevalence across all farms.
 
----
+- **Geo Map**  
+  Displays spatial distribution of farms, colored by crop disease status and sized by yield, allowing geographic yield analysis.
 
-## 🚀 How to Use
-
-1. Clone or download this repository.
-2. Open `glg.pbix` in **Power BI Desktop**.
-3. Ensure that `Smart_Farming_Crop_Yield_2024.csv` is in the same directory.
-4. Explore, filter, and interact with the visuals.
+- **Performance Table**  
+  Lists individual farm metrics including yield, NDVI index, and disease status, with conditional formatting for quick scanning.
 
 ---
 
-## 📈 Dataset Description
+## 📁 Project Files
 
-Source: [Kaggle – Smart Farming Sensor Data for Yield Prediction](https://www.kaggle.com/datasets/atharvasoundankar/smart-farming-sensor-data-for-yield-prediction)
+- `glg.pbix`: Power BI Dashboard file
+- `Smart_Farming_Crop_Yield_2024.csv`: Source dataset used for all visuals
 
-The dataset includes:
-- Farm-level environmental and operational data
-- Crop types, yields, irrigation & fertilizer types
-- Disease status, NDVI index, and geographic coordinates
+---
+
+## 📌 How It Helps Greenhouse Farming
+
+This dashboard supports:
+- **Decision-making** on irrigation and crop cycles
+- **Early detection** of crop disease outbreaks
+- **Yield optimization** by identifying underperforming farms
+- **Efficient resource allocation** using environmental and production metrics
+
+---
+
+## 🛠️ Tools Used
+- Power BI (Data modeling, DAX, Visualization)
+- DAX Measures
+- Public agricultural dataset from Kaggle
 
 ---
 
